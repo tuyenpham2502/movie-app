@@ -110,4 +110,36 @@ class Constants {
       text: "Review",
     ),
   ];
+
+  static const List menuProfile = [
+    {
+      'label' : "Edit Profile",
+      'imageUrl':"assets/icons/edit_profile.png",
+      'value': "editProfile",
+      'hyperlink': '/editProfile'
+    },
+    {
+      'label' : "My Wallet",
+      'imageUrl':"assets/icons/my_wallet.png",
+      'value': "myWallet",
+      'hyperlink': '/myWallet'
+    },
+    {
+      'label' : "Change Language",
+      'imageUrl':"assets/icons/change_language.png",
+      'value': "changeLanguage",
+      'hyperlink': '/changeLanguage'
+    },
+    {
+      'label' : "Help Center",
+      'imageUrl':"assets/icons/help_center.png",
+      'value': "helpCenter",
+      'hyperlink': '/helpCenter'
+    },
+    // {
+    //   'label' : "Logout",
+    //   'imageUrl':"assets/icons/logout.png",
+    //   'value': "logout"
+    // },
+  ];
 }

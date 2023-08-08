@@ -64,6 +64,8 @@ class _InformationScreenState extends State<InformationScreen>
                         child: CachedNetworkImage(
                           imageUrl: image,
                           fit: BoxFit.cover,
+                          errorWidget: (context, url, error) =>
+                              const Icon(Icons.error),
                         ),
                       ),
                     ),
@@ -113,7 +115,7 @@ class _InformationScreenState extends State<InformationScreen>
           Navigator.pop(context);
         },
         icon: const Icon(
-          Icons.arrow_back_ios,
+          Icons.arrow_back,
           color: AppColors.white,
         ),
       ),
@@ -125,10 +127,14 @@ class _InformationScreenState extends State<InformationScreen>
       children: [
         Container(
           height: size.height / 3.5,
-          decoration: const BoxDecoration(
+          decoration: BoxDecoration(
             gradient: AppColors.bannerGradient,
             image: DecorationImage(
-              image: CachedNetworkImageProvider(Constants.imageDetail),
+              image: CachedNetworkImageProvider(Constants.imageDetail,
+                errorListener: () {
+                  print("error");
+                }
+              ),
               fit: BoxFit.cover,
             ),
           ),

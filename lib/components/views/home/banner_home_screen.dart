@@ -19,7 +19,7 @@ class BannerHomeScreen extends StatelessWidget {
       padding: EdgeInsets.symmetric(vertical: 12.h),
       child: GestureDetector(
         onTap: () {
-          Navigator.pushNamed(context, RoutesName.seleactCinema);
+          Navigator.pushNamed(context, RoutesName.selectCinema);
         },
         child: CarouselSlider(
           items: Constants.banners
@@ -30,7 +30,12 @@ class BannerHomeScreen extends StatelessWidget {
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(14.r),
                           image: DecorationImage(
-                              image: CachedNetworkImageProvider((item as Map)["imageUrl"]),
+                              image: CachedNetworkImageProvider(
+                                (item as Map)["imageUrl"],
+                                errorListener: () {
+                                  print("error");
+                                },
+                              ),
                               fit: BoxFit.cover)),
                     ),
                     Container(

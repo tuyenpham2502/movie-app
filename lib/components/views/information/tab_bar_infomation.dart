@@ -114,7 +114,11 @@ class _TabBarInformationState extends State<TabBarInformation> {
                                                           10.r),
                                                   image: DecorationImage(
                                                       image: CachedNetworkImageProvider(
-                                                          e['imageUrl']),
+                                                          e['imageUrl'],
+                                                          errorListener: (){
+                                                            print("error");
+                                                          }
+                                                      ),
                                                       fit: BoxFit.cover)),
                                             ),
                                           ),
@@ -138,7 +142,7 @@ class _TabBarInformationState extends State<TabBarInformation> {
                           style: AppStyle.textSize18Font400,
                         ),
                       ),
-                      VideoPlayer(_videoController)
+                      // VideoPlayer(_videoController)
 
                   ],
                   ),

@@ -3,12 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:movie_app/components/materials/app_colors.dart';
 import 'package:movie_app/components/views/home/home_screen.dart';
-import 'package:movie_app/services/authentication.dart';
 import "components/routes/app_routes.dart";
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
-  await Authentication.signUp("Tuyenhai12@gmail.com", "123456");
   runApp(const MyApp());
 
 }
@@ -35,9 +33,14 @@ class _MyAppState extends State<MyApp> {
         home: const HomeScreen(),
         title: 'Flutter Demo',
         theme: ThemeData(
+          textTheme: Theme.of(context).textTheme.apply(
+            bodyColor: Colors.white,
+            displayColor: Colors.white,
+          ),
           fontFamily: "Montserrat",
           primaryColor: Colors.blue,
           scaffoldBackgroundColor: AppColors.darkBlue,
+
         ),
       );
       }

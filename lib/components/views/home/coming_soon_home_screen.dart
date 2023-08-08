@@ -30,7 +30,11 @@ class ComingSoon extends StatelessWidget {
                               gradient: AppColors.bannerGradient,
                               borderRadius: BorderRadius.circular(14.r),
                               image: DecorationImage(
-                                  image: CachedNetworkImageProvider((item as Map)["imageUrl"]),
+                                  image: CachedNetworkImageProvider((item as Map)["imageUrl"],
+                                  errorListener: () {
+                                    print("error");
+                                  }
+                                  ),
                                   fit: BoxFit.cover)),
                         ),
                       );

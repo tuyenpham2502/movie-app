@@ -7,14 +7,15 @@ import 'package:movie_app/components/views/home/promo_home_screen.dart';
 import 'package:movie_app/components/views/home/search_home_screen.dart';
 import 'package:movie_app/components/views/home/widgets/build_text.dart';
 import 'package:movie_app/constants/constants.dart';
+import 'package:movie_app/services/authentication.dart';
 import 'coming_soon_home_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
-
   @override
   State<HomeScreen> createState() => _HomeScreenState();
 }
+
 
 class _HomeScreenState extends State<HomeScreen> {
   @override

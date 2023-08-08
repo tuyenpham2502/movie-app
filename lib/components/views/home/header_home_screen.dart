@@ -24,12 +24,17 @@ class HeaderHomePage extends StatelessWidget {
                   style: AppStyle.textSize24Font600
                 ),
               ),
-              SizedBox(
-                width: 48.w,
-                height: 48.h,
-                child: const CircleAvatar(
-                  backgroundImage: CachedNetworkImageProvider(
-                      "https://w7.pngwing.com/pngs/340/946/png-transparent-avatar-user-computer-icons-software-developer-avatar-child-face-heroes-thumbnail.png"),
+              GestureDetector(
+                onTap: () {
+                  Navigator.pushNamed(context, "/profile");
+                },
+                child: SizedBox(
+                  width: 48.w,
+                  height: 48.h,
+                  child: const CircleAvatar(
+                    backgroundImage: CachedNetworkImageProvider(
+                        "https://w7.pngwing.com/pngs/340/946/png-transparent-avatar-user-computer-icons-software-developer-avatar-child-face-heroes-thumbnail.png"),
+                  ),
                 ),
               ),
             ],
