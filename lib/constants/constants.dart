@@ -142,4 +142,63 @@ class Constants {
     //   'value': "logout"
     // },
   ];
+
+  static const List fakeDataMyWallet =[
+    {
+      "movieName":"How to Train Your Dragon",
+      "movieDate":"12 Jan, 2020",
+      "price":"\$ 10.00",
+      "imageUrl":"https://www.figma.com/file/r2RU3PV9smMYyjgLWi987n/image/16d1d5daeb0aabe4cd7d44fd4ffd0cd343ca551d",
+    },
+    {
+      "imageUrl":"https://s3-alpha-sig.figma.com/img/b070/ded0/2a9804811b823b80d68f482a5a974b4c?Expires=1692576000&Signature=C4IVL~en-h4ZGLbyNasnthuWJ6XoZQHdReOb3Rn2-Btlbyt0TZnBYDjeKRkoM3qzJy7WBG3vztZyiQi6iJsD2RNQ9jHx7ga0bjCU87~Hs2uL5A0YIE5rdKgk6iTOl2jIuesNBgnrKzdh1jIQYeB~4SG82FAov2utZrNzFhs2b2-ZwUNcVf-~wH0lpZJdFNHTD2pevPnkTbkgWq5MNC0Mb7bAHgRC8l83Cmj7h5XXhtUPBsS0ebAYozlEQ9x7ymFyiT~UXlBPzo9yXker3rf1oIcrR3ePRpC9Xe5FdURzn26J1cL0T2ev7pp8m7VSv1DL9t93D-fnnnE8yF0SiHF65A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      "movieName":"Ralph Breaks the Internet",
+      "movieDate":"12 Jan, 2020",
+      "price":"\$ 10.00",
+    },
+    {
+      "imageUrl":"https://s3-alpha-sig.figma.com/img/b070/ded0/2a9804811b823b80d68f482a5a974b4c?Expires=1692576000&Signature=C4IVL~en-h4ZGLbyNasnthuWJ6XoZQHdReOb3Rn2-Btlbyt0TZnBYDjeKRkoM3qzJy7WBG3vztZyiQi6iJsD2RNQ9jHx7ga0bjCU87~Hs2uL5A0YIE5rdKgk6iTOl2jIuesNBgnrKzdh1jIQYeB~4SG82FAov2utZrNzFhs2b2-ZwUNcVf-~wH0lpZJdFNHTD2pevPnkTbkgWq5MNC0Mb7bAHgRC8l83Cmj7h5XXhtUPBsS0ebAYozlEQ9x7ymFyiT~UXlBPzo9yXker3rf1oIcrR3ePRpC9Xe5FdURzn26J1cL0T2ev7pp8m7VSv1DL9t93D-fnnnE8yF0SiHF65A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      "movieName":"Ralph Breaks the Internet",
+      "movieDate":"12 Jan, 2020",
+      "price":"\$ 10.00",
+    },
+    {
+      "imageUrl":"https://s3-alpha-sig.figma.com/img/b070/ded0/2a9804811b823b80d68f482a5a974b4c?Expires=1692576000&Signature=C4IVL~en-h4ZGLbyNasnthuWJ6XoZQHdReOb3Rn2-Btlbyt0TZnBYDjeKRkoM3qzJy7WBG3vztZyiQi6iJsD2RNQ9jHx7ga0bjCU87~Hs2uL5A0YIE5rdKgk6iTOl2jIuesNBgnrKzdh1jIQYeB~4SG82FAov2utZrNzFhs2b2-ZwUNcVf-~wH0lpZJdFNHTD2pevPnkTbkgWq5MNC0Mb7bAHgRC8l83Cmj7h5XXhtUPBsS0ebAYozlEQ9x7ymFyiT~UXlBPzo9yXker3rf1oIcrR3ePRpC9Xe5FdURzn26J1cL0T2ev7pp8m7VSv1DL9t93D-fnnnE8yF0SiHF65A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      "movieName":"Ralph Breaks the Internet",
+      "movieDate":"12 Jan, 2020",
+      "price":"\$ 10.00",
+    },
+    {
+      "imageUrl":"https://s3-alpha-sig.figma.com/img/b070/ded0/2a9804811b823b80d68f482a5a974b4c?Expires=1692576000&Signature=C4IVL~en-h4ZGLbyNasnthuWJ6XoZQHdReOb3Rn2-Btlbyt0TZnBYDjeKRkoM3qzJy7WBG3vztZyiQi6iJsD2RNQ9jHx7ga0bjCU87~Hs2uL5A0YIE5rdKgk6iTOl2jIuesNBgnrKzdh1jIQYeB~4SG82FAov2utZrNzFhs2b2-ZwUNcVf-~wH0lpZJdFNHTD2pevPnkTbkgWq5MNC0Mb7bAHgRC8l83Cmj7h5XXhtUPBsS0ebAYozlEQ9x7ymFyiT~UXlBPzo9yXker3rf1oIcrR3ePRpC9Xe5FdURzn26J1cL0T2ev7pp8m7VSv1DL9t93D-fnnnE8yF0SiHF65A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      "movieName":"Ralph Breaks the Internet",
+      "movieDate":"12 Jan, 2020",
+      "price":"\$ 10.00",
+    },
+    {
+      "imageUrl":"https://s3-alpha-sig.figma.com/img/b070/ded0/2a9804811b823b80d68f482a5a974b4c?Expires=1692576000&Signature=C4IVL~en-h4ZGLbyNasnthuWJ6XoZQHdReOb3Rn2-Btlbyt0TZnBYDjeKRkoM3qzJy7WBG3vztZyiQi6iJsD2RNQ9jHx7ga0bjCU87~Hs2uL5A0YIE5rdKgk6iTOl2jIuesNBgnrKzdh1jIQYeB~4SG82FAov2utZrNzFhs2b2-ZwUNcVf-~wH0lpZJdFNHTD2pevPnkTbkgWq5MNC0Mb7bAHgRC8l83Cmj7h5XXhtUPBsS0ebAYozlEQ9x7ymFyiT~UXlBPzo9yXker3rf1oIcrR3ePRpC9Xe5FdURzn26J1cL0T2ev7pp8m7VSv1DL9t93D-fnnnE8yF0SiHF65A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      "movieName":"Ralph Breaks the Internet",
+      "movieDate":"12 Jan, 2020",
+      "price":"\$ 10.00",
+    },
+    {
+      "imageUrl":"https://s3-alpha-sig.figma.com/img/b070/ded0/2a9804811b823b80d68f482a5a974b4c?Expires=1692576000&Signature=C4IVL~en-h4ZGLbyNasnthuWJ6XoZQHdReOb3Rn2-Btlbyt0TZnBYDjeKRkoM3qzJy7WBG3vztZyiQi6iJsD2RNQ9jHx7ga0bjCU87~Hs2uL5A0YIE5rdKgk6iTOl2jIuesNBgnrKzdh1jIQYeB~4SG82FAov2utZrNzFhs2b2-ZwUNcVf-~wH0lpZJdFNHTD2pevPnkTbkgWq5MNC0Mb7bAHgRC8l83Cmj7h5XXhtUPBsS0ebAYozlEQ9x7ymFyiT~UXlBPzo9yXker3rf1oIcrR3ePRpC9Xe5FdURzn26J1cL0T2ev7pp8m7VSv1DL9t93D-fnnnE8yF0SiHF65A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      "movieName":"Ralph Breaks the Internet",
+      "movieDate":"12 Jan, 2020",
+      "price":"\$ 10.00",
+    },
+    {
+      "imageUrl":"https://s3-alpha-sig.figma.com/img/b070/ded0/2a9804811b823b80d68f482a5a974b4c?Expires=1692576000&Signature=C4IVL~en-h4ZGLbyNasnthuWJ6XoZQHdReOb3Rn2-Btlbyt0TZnBYDjeKRkoM3qzJy7WBG3vztZyiQi6iJsD2RNQ9jHx7ga0bjCU87~Hs2uL5A0YIE5rdKgk6iTOl2jIuesNBgnrKzdh1jIQYeB~4SG82FAov2utZrNzFhs2b2-ZwUNcVf-~wH0lpZJdFNHTD2pevPnkTbkgWq5MNC0Mb7bAHgRC8l83Cmj7h5XXhtUPBsS0ebAYozlEQ9x7ymFyiT~UXlBPzo9yXker3rf1oIcrR3ePRpC9Xe5FdURzn26J1cL0T2ev7pp8m7VSv1DL9t93D-fnnnE8yF0SiHF65A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      "movieName":"Ralph Breaks the Internet",
+      "movieDate":"12 Jan, 2020",
+      "price":"\$ 10.00",
+    },
+    {
+      "imageUrl":"https://s3-alpha-sig.figma.com/img/b070/ded0/2a9804811b823b80d68f482a5a974b4c?Expires=1692576000&Signature=C4IVL~en-h4ZGLbyNasnthuWJ6XoZQHdReOb3Rn2-Btlbyt0TZnBYDjeKRkoM3qzJy7WBG3vztZyiQi6iJsD2RNQ9jHx7ga0bjCU87~Hs2uL5A0YIE5rdKgk6iTOl2jIuesNBgnrKzdh1jIQYeB~4SG82FAov2utZrNzFhs2b2-ZwUNcVf-~wH0lpZJdFNHTD2pevPnkTbkgWq5MNC0Mb7bAHgRC8l83Cmj7h5XXhtUPBsS0ebAYozlEQ9x7ymFyiT~UXlBPzo9yXker3rf1oIcrR3ePRpC9Xe5FdURzn26J1cL0T2ev7pp8m7VSv1DL9t93D-fnnnE8yF0SiHF65A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      "movieName":"Ralph Breaks the Internet",
+      "movieDate":"12 Jan, 2020",
+      "price":"\$ 10.00",
+    },
+
+  ];
+
 }

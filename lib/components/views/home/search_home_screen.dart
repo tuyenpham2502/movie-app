@@ -37,7 +37,7 @@ class SearchHomeScreen extends StatelessWidget {
                 ),
                 Expanded(child: Padding(
                   padding: EdgeInsets.only(left: 8.w),
-                  child: const TextFieldCus(hintText: "Search movie"),
+                  child: const TextFieldCusSearch(hintText: "Search movie"),
                 ))
               ])),
         ),
