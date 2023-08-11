@@ -2,8 +2,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-import '../../materials/app_colors.dart';
-import '../widgets/text_field_cus.dart';
+import '../../../materials/app_colors.dart';
+import '../../widgets/text_field_cus.dart';
 
 class SearchHomeScreen extends StatelessWidget {
   const SearchHomeScreen({

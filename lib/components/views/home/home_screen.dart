@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:movie_app/components/views/home/banner_home_screen.dart';
-import 'package:movie_app/components/views/home/category.dart';
-import 'package:movie_app/components/views/home/header_home_screen.dart';
-import 'package:movie_app/components/views/home/promo_home_screen.dart';
-import 'package:movie_app/components/views/home/search_home_screen.dart';
+import 'package:movie_app/components/views/home/widgets/banner_home_screen.dart';
 import 'package:movie_app/components/views/home/widgets/build_text.dart';
+import 'package:movie_app/components/views/home/widgets/category.dart';
+import 'package:movie_app/components/views/home/widgets/header_home_screen.dart';
+import 'package:movie_app/components/views/home/widgets/promo_home_screen.dart';
+import 'package:movie_app/components/views/home/widgets/search_home_screen.dart';
 import 'package:movie_app/constants/constants.dart';
-import 'package:movie_app/services/authentication.dart';
-import 'coming_soon_home_screen.dart';
+import 'widgets/coming_soon_home_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -48,7 +47,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 const BuildText(text: "Promo"),
                 //list card promo
                 Column(
-                  children: Constants.promo.map((e) => Promo(size: size, data: e)).toList()
+                  children: Constants.promo.map((e) => Promo(size: size, data: e)).toList(),
                 )
               ],
             ),

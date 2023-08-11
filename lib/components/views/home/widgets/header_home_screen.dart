@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:movie_app/theme/app_styles.dart';
 
-import '../../materials/app_colors.dart';
+import '../../../materials/app_colors.dart';
 
 class HeaderHomePage extends StatelessWidget {
   const HeaderHomePage({Key? key, required this.size}) : super(key: key);

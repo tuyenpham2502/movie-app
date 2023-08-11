@@ -4,7 +4,7 @@ import 'package:movie_app/components/views/app.dart';
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
-  runApp(const App());
+  runApp(App());
 
 }
 

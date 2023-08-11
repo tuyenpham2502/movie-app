@@ -2,7 +2,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:movie_app/components/materials/app_colors.dart';
-import 'package:movie_app/components/views/information/tab_bar_infomation.dart';
+import 'package:movie_app/components/views/information/widgets/tab_bar_infomation.dart';
 import 'package:movie_app/components/views/widgets/rating_bar_cus.dart';
 import 'package:movie_app/constants/constants.dart';
 import 'package:movie_app/theme/app_styles.dart';

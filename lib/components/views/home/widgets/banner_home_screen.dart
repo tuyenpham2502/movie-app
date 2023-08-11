@@ -3,12 +3,12 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:movie_app/components/routes/app_routes.dart';
 import 'package:movie_app/theme/app_styles.dart';
 
-import '../../../constants/constants.dart';
-import '../../materials/app_colors.dart';
-import '../../routes/routes_name.dart';
-import '../widgets/rating_bar_cus.dart';
+import '../../../../constants/constants.dart';
+import '../../../materials/app_colors.dart';
+import '../../widgets/rating_bar_cus.dart';
 
 class BannerHomeScreen extends StatelessWidget {
   const BannerHomeScreen({Key? key, required this.size}) : super(key: key);
@@ -19,7 +19,6 @@ class BannerHomeScreen extends StatelessWidget {
       padding: EdgeInsets.symmetric(vertical: 12.h),
       child: GestureDetector(
         onTap: () {
-          Navigator.pushNamed(context, RoutesName.selectCinema);
         },
         child: CarouselSlider(
           items: Constants.banners

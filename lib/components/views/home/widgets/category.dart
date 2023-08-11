@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:movie_app/theme/app_styles.dart';
 
-import '../../../constants/constants.dart';
-import '../../materials/app_colors.dart';
+import '../../../../constants/constants.dart';
+import '../../../materials/app_colors.dart';
 
 class Category extends StatefulWidget {
   const Category({Key? key, required this.size}) : super(key: key);

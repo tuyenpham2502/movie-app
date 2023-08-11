@@ -1,21 +1,24 @@
+import 'package:fluro/fluro.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:movie_app/components/materials/app_colors.dart';
 import 'package:movie_app/untils/navigation_services.dart';
 import 'package:overlay_support/overlay_support.dart';
-
-import '../routes/app_routes.dart';
+import 'package:movie_app/components/routes/app_routes.dart';
 
 class App extends StatefulWidget {
 
-  const App({super.key});
+   App({Key? key}) : super(key: key) {
+     final router = FluroRouter();
+     Routes.configureRoutes(router);
+     Application.router = router;
+   }
 
   @override
   State<App> createState() => _AppState();
 }
 
 class _AppState extends State<App> {
-  final AppRoute _appRoute = AppRoute();
 
   // This widget is the root of your application.
   @override
@@ -32,7 +35,7 @@ class _AppState extends State<App> {
                 );
               },
               navigatorKey: NavigationService.navigatorKey,
-              onGenerateRoute: _appRoute.onGenerateRoute,
+              onGenerateRoute: Application.router!.generator,
               title: 'Movie App',
               theme: ThemeData(
                 textTheme: Theme.of(context).textTheme.apply(
