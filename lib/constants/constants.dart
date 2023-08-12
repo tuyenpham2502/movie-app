@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:movie_app/components/routes/app_routes.dart';
 
 class Constants {
   static const List<Object> categories = [
@@ -122,7 +123,7 @@ class Constants {
       'label' : "My Wallet",
       'imageUrl':"assets/icons/my_wallet.png",
       'value': "myWallet",
-      'hyperlink': '/myWallet'
+      'hyperlink': Routes.myWallet
     },
     {
       'label' : "Change Language",
@@ -136,11 +137,12 @@ class Constants {
       'value': "helpCenter",
       'hyperlink': '/helpCenter'
     },
-    // {
-    //   'label' : "Logout",
-    //   'imageUrl':"assets/icons/logout.png",
-    //   'value': "logout"
-    // },
+    {
+      'label' : "Logout",
+      'imageUrl':"assets/icons/logout.png",
+      'value': "logout",
+      'hyperlink': '/logout'
+    },
   ];
 
   static const List fakeDataMyWallet =[

@@ -1,6 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:movie_app/components/routes/app_routes.dart';
 import 'package:movie_app/theme/app_styles.dart';
 
 import '../../../materials/app_colors.dart';
@@ -26,7 +27,7 @@ class HeaderHomePage extends StatelessWidget {
               ),
               GestureDetector(
                 onTap: () {
-                  Navigator.pushNamed(context, "/profile");
+                  Application.router?.navigateTo(context, Routes.profile);
                 },
                 child: SizedBox(
                   width: 48.w,

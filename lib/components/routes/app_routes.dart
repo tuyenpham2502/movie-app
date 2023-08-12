@@ -4,6 +4,7 @@ import 'package:movie_app/components/routes/router_handler/home_handler.dart';
 import 'package:movie_app/components/routes/router_handler/information_handler.dart';
 import 'package:movie_app/components/routes/router_handler/my_ticket_handler.dart';
 import 'package:movie_app/components/routes/router_handler/my_wallet_handler.dart';
+import 'package:movie_app/components/routes/router_handler/profile_handler.dart';
 import 'package:movie_app/components/routes/router_handler/root_handler.dart';
 part 'application.dart';
 
@@ -14,6 +15,7 @@ class Routes {
   static const String information = '/information';
   static const String myWallet = '/myWallet';
   static const String myTicket = '/myTicket';
+  static const String profile = '/profile';
 
 
   static void configureRoutes(FluroRouter router) {
@@ -21,9 +23,10 @@ class Routes {
     router.define(root, handler: bottomBarHandler);
     router.define(bottomBar, handler: bottomBarHandler);
     router.define(home, handler: homeHandler, transitionType: TransitionType.native);
-    router.define(myWallet, handler: myWalletHandler, transitionType: TransitionType.native);
+    router.define(myWallet, handler: myWalletHandler, transitionType: TransitionType.fadeIn);
     router.define(myTicket, handler: myTicketHandler, transitionType: TransitionType.native);
     router.define(information, handler: informationHandler);
+    router.define(profile, handler: profileHandler);
   }
 
 

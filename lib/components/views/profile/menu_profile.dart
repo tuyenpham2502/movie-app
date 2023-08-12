@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:movie_app/components/materials/app_colors.dart';
+import 'package:movie_app/components/routes/app_routes.dart';
 
 import '../../../constants/constants.dart';
 import '../../../theme/app_styles.dart';
@@ -21,7 +22,7 @@ class MenuProfile extends StatelessWidget {
         children: Constants.menuProfile.map((item) =>
           TextButton(
             onPressed: () {
-              Navigator.pushNamed(context, item['hyperlink']);
+              Application.router?.navigateTo(context, item['hyperlink']);
             },
             child: Container(
               width: size.width,

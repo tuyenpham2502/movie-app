@@ -57,7 +57,7 @@ class _MyWalletScreenState extends State<MyWalletScreen> {
               );
             },
             backgroundColor: Colors.redAccent,
-            child: const Icon(Icons.arrow_upward),
+            child: Image.asset("assets/icons/top_up.png"),
           ),
         ),
         body: SafeArea(

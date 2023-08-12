@@ -25,7 +25,7 @@ class ComingSoon extends StatelessWidget {
                               arguments: item);
                         },
                         child: Container(
-                          margin: EdgeInsets.only(right: 12.w),
+                           margin: EdgeInsets.only(right: 12.w),
                           height: 200.h,
                           decoration: BoxDecoration(
                               gradient: AppColors.bannerGradient,
