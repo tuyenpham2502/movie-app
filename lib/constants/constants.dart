@@ -120,12 +120,6 @@ class Constants {
       'hyperlink': '/editProfile'
     },
     {
-      'label' : "My Wallet",
-      'imageUrl':"assets/icons/my_wallet.png",
-      'value': "myWallet",
-      'hyperlink': Routes.myWallet
-    },
-    {
       'label' : "Change Language",
       'imageUrl':"assets/icons/change_language.png",
       'value': "changeLanguage",
@@ -141,7 +135,7 @@ class Constants {
       'label' : "Logout",
       'imageUrl':"assets/icons/logout.png",
       'value': "logout",
-      'hyperlink': '/logout'
+      'hyperlink': Routes.login
     },
   ];
 
