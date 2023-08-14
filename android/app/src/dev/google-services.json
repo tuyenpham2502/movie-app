@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "512673429473",
+    "project_id": "qlhs-dev-cbb55",
+    "storage_bucket": "qlhs-dev-cbb55.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:512673429473:android:af0fa5eb1397dc855384a0",
+        "android_client_info": {
+          "package_name": "com.example.movie_app.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "512673429473-363vnurjq9bmus4spi84i0bmk5f50lt0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2miJBDMtiSJxrNkMNiCy08rsmj6X_D80"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "512673429473-363vnurjq9bmus4spi84i0bmk5f50lt0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

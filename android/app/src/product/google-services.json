@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "609355910413",
+    "firebase_url": "https://qlhs-fdeab-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "qlhs-fdeab",
+    "storage_bucket": "qlhs-fdeab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:609355910413:android:c77c59504d85221985f444",
+        "android_client_info": {
+          "package_name": "com.example.movie_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "609355910413-7u566nlf6ss0efhm6pek00fibk998r24.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIiX8CFU7P4W4K12FeXcmKw4YYKpxCpAw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "609355910413-7u566nlf6ss0efhm6pek00fibk998r24.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
