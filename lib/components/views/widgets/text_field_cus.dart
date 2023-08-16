@@ -9,10 +9,10 @@ class TextFieldCusSearch extends StatefulWidget {
       : super(key: key);
 
   @override
-  State<TextFieldCusSearch> createState() => _TextFieldCusSearch();
+  State<TextFieldCusSearch> createState() => _TextFieldCusSearchState();
 }
 
-class _TextFieldCusSearch extends State<TextFieldCusSearch> {
+class _TextFieldCusSearchState extends State<TextFieldCusSearch> {
   @override
   Widget build(BuildContext context) {
     return TextField(
@@ -32,22 +32,17 @@ class _TextFieldCusSearch extends State<TextFieldCusSearch> {
   }
 }
 
-class TextFieldCus extends StatefulWidget {
-  const TextFieldCus({super.key, required this.hintText, required this.controller});
+class TextFieldCus extends StatelessWidget {
+  const TextFieldCus({super.key, required this.hintText, required this.controller, this.obscureText = false});
 
   final String hintText;
   final TextEditingController controller;
-
-  @override
-  State<TextFieldCus> createState() => _TextFieldCusState();
-
-}
-
-class _TextFieldCusState extends State<TextFieldCus> {
+  final bool obscureText;
   @override
   Widget build(BuildContext context) {
     return TextField(
-      controller: widget.controller,
+      obscureText: obscureText,
+      controller: controller,
       style: const TextStyle(
         color: AppColors.white,
       ),
@@ -62,11 +57,53 @@ class _TextFieldCusState extends State<TextFieldCus> {
           borderRadius: BorderRadius.circular(20.r)
 
         ),
-        label: Text(widget.hintText, style: const TextStyle(
+        label: Text(hintText, style: const TextStyle(
           color: AppColors.white,
         ),),
         ),
     );
   }
 }
+
+class TextFormFieldCus extends StatelessWidget {
+  const TextFormFieldCus({super.key, required this.controller, this.obscureText = false, required this.hintText});
+
+  final TextEditingController controller;
+  final bool obscureText;
+  final String hintText;
+
+  @override
+  Widget build(BuildContext context) {
+    return TextFormField(
+      autovalidateMode: AutovalidateMode.onUserInteraction,
+      validator: (value) {
+        if (value == null || value.isEmpty) {
+          return "Please enter some text";
+        }
+        return null;
+      },
+      obscureText: obscureText,
+      controller: controller,
+      style: const TextStyle(
+        color: AppColors.white,
+      ),
+      decoration: InputDecoration(
+        focusedBorder: const OutlineInputBorder(
+          borderSide: BorderSide(color: AppColors.white),
+        ),
+        enabledBorder: const OutlineInputBorder(
+          borderSide: BorderSide(color: AppColors.white),
+        ),
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(20.r)
+
+        ),
+        label: Text(hintText, style: const TextStyle(
+          color: AppColors.white,
+        ),),
+        ),
+    );
+  }
+}
+
 

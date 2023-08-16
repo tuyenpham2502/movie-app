@@ -6,6 +6,9 @@ class FlavorSettings {
   FlavorSettings.dev()
       : apiBaseUrl = 'https://dev.flutter-flavors.chwe.at';
 
-  FlavorSettings.live()
+  FlavorSettings.staging()
+      : apiBaseUrl = 'https://staging.flutter-flavors.chwe.at';
+
+  FlavorSettings.product()
       : apiBaseUrl = 'https://flutter-flavors.chwe.at';
 }
