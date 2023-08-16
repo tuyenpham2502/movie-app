@@ -14,6 +14,7 @@ class AppColors {
   static const Color royalBlue = Color.fromRGBO(30, 53, 119, 1);
   static const Color skyBlue = Color.fromRGBO(61, 88, 248, 1);
   static const Color turquoise = Color.fromRGBO(72, 202, 231, 1);
+  static const Color turquoise10 = Color.fromRGBO(0, 255, 255, 0.1);
   static const Color cornFlowerBlue = Color.fromRGBO(44, 75, 161, 1);
   static const Color darkSkyBlue = Color.fromRGBO(62, 96, 249, 1);
   static const Color coralPink = Color(0xFFFF5C83);
@@ -91,5 +92,6 @@ class AppColors {
     spreadRadius: 0,
     color: Color.fromRGBO(62, 94, 244, 0.10),
   );
+
 
 }

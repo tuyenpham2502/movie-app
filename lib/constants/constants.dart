@@ -197,4 +197,15 @@ class Constants {
 
   ];
 
+  static List loginType = [
+    {
+      "value":"google",
+      "icon":"assets/icons/google.png",
+    },
+    {
+      "value":"facebook",
+      "icon":"assets/icons/facebook.png",
+    },
+  ];
+
 }

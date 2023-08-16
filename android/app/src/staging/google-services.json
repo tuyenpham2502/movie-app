@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "417851048714",
+    "project_id": "qlhs-staging",
+    "storage_bucket": "qlhs-staging.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:417851048714:android:f6d5a210dbdccd390630f3",
+        "android_client_info": {
+          "package_name": "com.example.movie_app.staging"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "417851048714-0tnjhmhi3e6inpl0uderdovbgmvtpb26.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDon4u1PJuY4Z2RxnpPjywwQfNVu_c2qGQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "417851048714-0tnjhmhi3e6inpl0uderdovbgmvtpb26.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
