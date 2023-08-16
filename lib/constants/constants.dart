@@ -1,12 +1,13 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:movie_app/components/routes/app_routes.dart';
 
 class Constants {
-  static const List<Object> categories = [
-    {"label": "All", "value": "all"},
-    {"label": "Action", "value": "action"},
-    {"label": "Adventure", "value": "adventure"},
-    {"label": "Drama", "value": "drama"}
+  static final List<Object> categories = [
+    {"label": tr('categoryMovie.all'), "value": "all"},
+    {"label": tr("categoryMovie.action"), "value": "action"},
+    {"label": tr("categoryMovie.adventure"), "value": "adventure"},
+    {"label": tr("categoryMovie.drama"), "value": "drama"}
   ];
 
   static const List<Object> banners = [
@@ -103,13 +104,26 @@ class Constants {
     ]
   };
 
-  static const List<Widget> tabBar = [
+  static final List<Widget> tabBar = [
     Tab(
-      text: "About Movie",
+      text: tr("aboutMovie"),
     ),
     Tab(
-      text: "Review",
+      text: tr("reviews"),
     ),
+  ];
+
+  static const List languages= [
+    {
+      'label': 'English',
+      'value': 'en_US',
+      'local': Locale('en','US')
+    },
+    {
+      'label': 'Tiếng Việt',
+      'value': 'vi_VN',
+      'local': Locale('vi', 'VN')
+    },
   ];
 
   static const List menuProfile = [

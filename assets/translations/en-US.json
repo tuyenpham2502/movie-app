@@ -1,0 +1,22 @@
+{
+  "findYourBestMovie": "Find Your Best Movie",
+  "searchMovie": "Search Movie",
+
+  "categoryMovie": {
+    "all": "All",
+    "action": "Action",
+    "adventure": "Adventure",
+    "drama": "Drama",
+    "horror": "Horror"
+  },
+  "comingSoon": "Coming Soon",
+  "nowPlaying": "Now Playing",
+  "promo": "Promo",
+
+  "aboutMovie": "About Movie",
+  "reviews": "Reviews",
+  "synopsis": "Synopsis",
+  "castAndCrew": "Cast & Crew",
+  "trailersAndSongs": "Trailers & Songs"
+
+}

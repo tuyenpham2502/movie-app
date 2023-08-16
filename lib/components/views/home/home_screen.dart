@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:movie_app/components/views/home/widgets/banner_home_screen.dart';
@@ -17,7 +18,6 @@ class HomeScreen extends StatefulWidget {
 
 
 class _HomeScreenState extends State<HomeScreen> {
-  @override
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
     return SafeArea(
@@ -36,15 +36,15 @@ class _HomeScreenState extends State<HomeScreen> {
                 //category
                 Category(size: size),
                 //now playing text
-                const BuildText(text: "Now Playing"),
+                BuildText(text: tr("nowPlaying")),
                 //banners
                 BannerHomeScreen(size: size),
                 //coming soon text
-                const BuildText(text: "Coming Soon"),
+                BuildText(text: tr("comingSoon")),
                 //list card coming soon
                 const ComingSoon(),
                 //promo text
-                const BuildText(text: "Promo"),
+                BuildText(text: tr("promo")),
                 //list card promo
                 Column(
                   children: Constants.promo.map((e) => Promo(size: size, data: e)).toList(),

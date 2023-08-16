@@ -1,17 +1,22 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:movie_app/components/views/app.dart';
 import 'package:movie_app/flavor_settings.dart';
-import 'package:movie_app/services/authentication.dart';
-
 Future<void> main() async {
   WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
+  await EasyLocalization.ensureInitialized();
   final settings = await _getFlavorSettings();
   await Firebase.initializeApp();
   print('STARTED WITH FLAVOR $settings');
-  runApp(App());
+  runApp(EasyLocalization(
+      supportedLocales: const [Locale('en', 'US'), Locale('vi', 'VN')],
+      path: 'assets/translations',
+      saveLocale: true,
+      fallbackLocale: const Locale('en', 'US'),
+      startLocale: const Locale('vi', 'VN'),
+      child: App()));
 }
 
 Future<FlavorSettings> _getFlavorSettings() async {
@@ -22,11 +27,9 @@ Future<FlavorSettings> _getFlavorSettings() async {
 
   if (flavor == 'dev') {
     return FlavorSettings.dev();
-  }
-  else if (flavor == 'staging') {
+  } else if (flavor == 'staging') {
     return FlavorSettings.staging();
-  }
-  else if (flavor == 'product') {
+  } else if (flavor == 'product') {
     return FlavorSettings.product();
   } else {
     throw Exception("Unknown flavor: $flavor");

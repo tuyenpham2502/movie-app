@@ -1,8 +1,8 @@
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:movie_app/components/materials/app_colors.dart';
-import 'package:movie_app/components/views/widgets/rating_bar_cus.dart';
 import 'package:movie_app/constants/constants.dart';
 import 'package:movie_app/theme/app_styles.dart';
 import 'package:video_player/video_player.dart';
@@ -76,7 +76,7 @@ class _TabBarInformationState extends State<TabBarInformation> {
                       Container(
                         margin: EdgeInsets.symmetric(vertical: 16.h),
                         child: Text(
-                          "Synopsis",
+                          tr("synopsis"),
                           style: AppStyle.textSize18Font400,
                         ),
                       ),
@@ -90,7 +90,7 @@ class _TabBarInformationState extends State<TabBarInformation> {
                       Container(
                         margin: EdgeInsets.only(top: 32.h, bottom: 16.h),
                         child: Text(
-                          "Cast And Crew",
+                          tr("castAndCrew"),
                           style: AppStyle.textSize18Font400,
                         ),
                       ),
@@ -138,7 +138,7 @@ class _TabBarInformationState extends State<TabBarInformation> {
                       Container(
                         margin: EdgeInsets.only(top: 32.h, bottom: 16.h),
                         child: Text(
-                          "Trailer and song",
+                          tr("trailersAndSongs"),
                           style: AppStyle.textSize18Font400,
                         ),
                       ),

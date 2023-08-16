@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:movie_app/components/materials/app_colors.dart';
 import 'package:movie_app/components/views/login/widgets/another_login_type.dart';
-import 'package:movie_app/components/views/widgets/text_field_cus.dart';
+import 'package:movie_app/components/views/widgets/password_form_field.dart';
 import 'package:movie_app/constants/constants.dart';
 import 'package:movie_app/theme/app_styles.dart';
+
+import '../widgets/email_form_field.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -17,7 +19,6 @@ class _LoginScreenState extends State<LoginScreen> {
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
   final _formKey = GlobalKey<FormState>();
-
 
   @override
   void dispose() {
@@ -53,17 +54,20 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
                 Padding(
                   padding: EdgeInsets.only(bottom: 44.h),
-                  child: TextFormFieldCus(
+                  child: EmailFormField(
                     controller: _emailController,
-                    hintText: "Email",
                   ),
                 ),
                 Padding(
                   padding: EdgeInsets.only(bottom: 12.h),
-                  child: TextFormFieldCus(
-                      obscureText: true,
-                      hintText: "Password",
-                      controller: _passwordController),
+                  child: PasswordFormField(
+                      validator: (value) {
+                        if (value!.isEmpty) {
+                          return "Please enter password";
+                        }
+                        return null;
+                      },
+                      controller: _passwordController, errorText: '',),
                 ),
                 Align(
                   alignment: Alignment.centerRight,
@@ -119,7 +123,6 @@ class _LoginScreenState extends State<LoginScreen> {
                           ))
                       .toList(),
                 ),
-
               ],
             ),
           ),

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:movie_app/components/materials/app_colors.dart';
 import '../../../../theme/app_styles.dart';
 
 class BuildText extends StatelessWidget {
@@ -15,8 +14,7 @@ class BuildText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.symmetric(vertical: 12.h),
-      child: Text(text,
-          style: AppStyle.textSize20Font600),
+      child: Text(text, style: AppStyle.textSize20Font600),
     );
   }
 }

@@ -1,0 +1,23 @@
+{
+  "findYourBestMovie": "Tìm kiếm bộ phim yêu thích của bạn",
+  "searchMovie": "Tìm kiếm phim",
+
+  "categoryMovie": {
+    "all": "Tất cả",
+    "action": "Hành động",
+    "adventure": "Phiêu lưu",
+    "drama": "Kịch",
+    "horror": "Kinh dị"
+  },
+  "comingSoon": "Sắp ra mắt",
+  "nowPlaying": "Đang chiếu",
+  "promo": "Khuyến mãi",
+
+  "aboutMovie": "Thông tin",
+  "reviews": "Đánh giá",
+  "synopsis": "Tóm tắt",
+  "castAndCrew": "Đoàn làm phim",
+  "trailersAndSongs": "Trailer & Bài hát"
+
+
+}

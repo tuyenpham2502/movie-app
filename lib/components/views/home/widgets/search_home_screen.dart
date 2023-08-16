@@ -1,4 +1,6 @@
 
+import 'package:easy_localization/easy_localization.dart' as localization;
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -55,7 +57,7 @@ class _SearchHomeScreenState extends State<SearchHomeScreen> {
                 ),
                 Expanded(child: Padding(
                   padding: EdgeInsets.only(left: 8.w),
-                  child: const TextFieldCusSearch(hintText: "Search movie"),
+                  child: TextFieldCusSearch(hintText: tr("searchMovie")),
                 ))
               ])),
         ),

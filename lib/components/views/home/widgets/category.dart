@@ -26,7 +26,7 @@ class _CategoryState extends State<Category> {
             itemCount: Constants.categories.length,
             itemBuilder: (context, index) {
               final String label =
-                  (Constants.categories[index] as Map)["label"].toString();
+                  (Constants.categories[index] as Map)["label"];
               return GestureDetector(
                 onTap: () {
                   setState(() {
